@@ -1,0 +1,167 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #121212, #3b3b3b); /* Dark gradient background */
+    color: #fff;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    color: #3498db; /* Matches the form's theme color */
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(52, 152, 219, 0.8), 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Editable Resume Heading */
+#resumeOutput h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #3498db; /* Form theme color */
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #212121;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Fieldset */
+fieldset {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #2c2c2c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Legend for Fieldset */
+legend {
+    font-weight: bold;
+    color: #3498db; /* Heading color matches the form theme */
+    font-size: 20px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-top: 12px;
+    color: #ddd;
+    font-weight: 500;
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+input:focus, textarea:focus {
+    border-color: #5cd1e5;
+    outline: none;
+    box-shadow: 0 0 10px #5cd1e5;
+    background-color: #444;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #5cd1e5;
+    transform: translateY(-2px);
+}
+
+/* Button Active Effect */
+button:active {
+    transform: translateY(2px);
+}
+
+/* Editable Text Styling */
+.editable {
+    padding: 5px;
+    border: 1px dashed #3498db;
+    background-color: #2c2c2c;
+    cursor: text;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Editable Text Hover Effect */
+.editable:hover {
+    background-color: #444;
+}
+
+/* Resume Output Styling */
+#resumeOutput {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+}
+
+/* Glowing Lighting Effect for Inputs */
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #3498db, 0 0 10px #3498db, 0 0 15px #3498db; }
+    50% { box-shadow: 0 0 10px #5cd1e5, 0 0 20px #5cd1e5, 0 0 30px #5cd1e5; }
+    100% { box-shadow: 0 0 5px #3498db, 0 0 10px #3498db, 0 0 15px #3498db; }
+}
+
+input, textarea {
+    animation: glowing 1.5s ease-in-out infinite alternate;
+}
+
+/* Profile Image Styling */
+#profileImage {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #3498db;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
